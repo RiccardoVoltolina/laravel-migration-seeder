@@ -4,19 +4,20 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Trains;
+use App\Models\Train;
 
-class trainsTableSeeder extends Seeder
+class TrainsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $trains = config('trains_data.train');
+        $trains = config('trains.trains');
 
         foreach ($trains as $train) {
-            $newTrain = new Trains();
+            $newTrain = new Train();
+            
         }
     }
 }
