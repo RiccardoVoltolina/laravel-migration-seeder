@@ -12,8 +12,14 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{$train->Azienda}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="card-text">{{$train->Stazione_di_partenza}}</div>
+      <div class="card-text">{{$train->Stazione_di_arrivo}}</div>
+      <div class="card-text">{{$train->Orario_di_partenza}}</div>
+      <div class="card-text">{{$train->Orario_di_arrivo}}</div>
+      <div class="card-text">{{$train->Codice_Treno}}</div>
+      <div class="card-text">{{$train->Numero_Carrozze}}</div>
+      <div class="card-text">{{$train->In_orario}}</div>
+      <div class="card-text">{{$train->Cancellato}}</div>
     </div>
   </div>
 
